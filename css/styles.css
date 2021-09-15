@@ -1,0 +1,277 @@
+/* by aezeq
+1. Posicionamiento
+2. Modelo de caja
+3. Fuentes
+4. Visuales
+5. Otros
+*/
+
+:root {
+  /* Colores */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warn-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 32rem;
+  height: 33.4rem;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+header img {
+  width: 15rem;
+  height: 2.4rem;
+  margin-top: 6rem;
+  align-self: center;
+}
+
+.header--title-container {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  height: 21.8rem;
+  margin-top: 4rem;
+  text-align: center;
+  align-self: center;
+}
+
+.header--title-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.header--title-container p {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+
+.header--title-container .header--button {
+  position: absolute;
+  left: calc(50% - 11.8rem);
+  top: 27rem;
+  display: block;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  width: 22.9rem;
+  height: 4.8rem;
+  background-color: var(--off-white);
+  /* Sombra */
+  box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.header--button span {
+  display: inline-block;
+  width: 1.3rem;
+  height: 0.8rem;
+  margin-left: 1rem;
+  background-image: url("../assets/icons/down-arrow.svg");
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.main-exchange-container--title {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  background-image: url("../assets/img/Bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-exchange-container h2 {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main-exchange-container p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+.main-tables-container {
+  width: 100%;
+  height: auto;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tables-container {
+  width: 55%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tables-container h3 {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--bitcoin-orange);
+  margin: 1rem 0;
+}
+
+.tables-container-grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--just-white);
+  border-radius: 10%;
+  text-align: left;
+}
+
+.tables-container-grid .grid--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border: 0.1rem solid var(--off-white);
+  text-align: left;
+}
+
+.tables-container-grid .grid--div h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--grey);
+}
+
+.tables-container-grid .grid--div .div--h4 {
+  margin-right: 2.4rem;
+}
+
+.tables-container-grid .grid--div h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #757575;
+}
+
+.tables-container-grid .grid--div .down {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 1rem;
+  background-image: url("../assets/icons/trending-down.svg");
+}
+
+.tables-container-grid .grid--div .up {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 1rem;
+  background-image: url("../assets/icons/trending-up.svg");
+}
+
+.main-tables-container .tables-container-act {
+  margin: 1rem 0;
+  background-color: var(--soft-orange);
+  border-radius: 0.8rem;
+}
+
+.main-tables-container .tables-container-act p b {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: var(--warn-black);
+}
+
+.main-tables-container .tables-container-act p {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin: 0.8rem 0.8rem;
+}
+
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 32rem;
+  height: auto;
+  padding: 2rem 1rem;
+  background-color: var(--warn-black);
+}
+
+.product-detail--batatalogo {
+  justify-content: center;
+  position: absolute;
+  width: 4rem;
+  height: 2.5rem;
+  background-image: url("../assets/icons/batata.svg");
+  top: -1rem;
+  left: 14rem;
+}
