@@ -153,8 +153,9 @@ main {
 .main-tables-container {
   width: 100%;
   height: auto;
+  margin: 0 auto;
   min-width: 28.8rem;
-  max-width: 90rem;
+  max-width: 50rem;
   display: flex;
   text-align: left;
   flex-direction: column;
@@ -187,9 +188,7 @@ main {
 }
 
 .tables-container-grid .grid--div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem;
   width: 100%;
   height: 4rem;
   border: 0.1rem solid var(--off-white);
@@ -224,6 +223,7 @@ main {
   height: 1.3rem;
   margin-left: 1rem;
   background-image: url("../assets/icons/trending-down.svg");
+  background-repeat: no-repeat;
 }
 
 .tables-container-grid .grid--div .up {
@@ -232,6 +232,7 @@ main {
   height: 1.3rem;
   margin-left: 1rem;
   background-image: url("../assets/icons/trending-up.svg");
+  background-repeat: no-repeat;
 }
 
 .main-tables-container .tables-container-act {
