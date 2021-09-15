@@ -155,7 +155,7 @@ main {
   height: auto;
   margin: 0 auto;
   min-width: 28.8rem;
-  max-width: 50rem;
+  max-width: 40rem;
   display: flex;
   text-align: left;
   flex-direction: column;
