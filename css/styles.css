@@ -439,7 +439,7 @@ main {
   min-width: 23rem;
   max-width: 30rem;
   height: 25rem;
-  margin: 5rem 3rem 0;
+  margin: 5rem 3rem;
   padding: 0 1.5rem;
   background-color: var(--just-white);
   border-radius: 1.5rem;
